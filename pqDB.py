@@ -5,7 +5,7 @@ import psycopg2, threading
 class pqDB:
         PQ_SEM = None;
         con = None
-        DBHOST='160.91.1.75'
+        DBHOST='localhost'
         DB='NAC'
         def __init__(self, database, host):
                 if database is not None and len(database) > 0:
