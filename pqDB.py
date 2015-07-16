@@ -12,7 +12,7 @@ class pqDB:
                         self.DB=database
                 if len(host) > 0:
                         self.DBHOST=host
-                self.con = psycopg2.connect("dbname=" + self.DB + " user=harrold host=" + self.DBHOST + " password=pwd")
+                self.con = psycopg2.connect("dbname=" + self.DB + " user=U44 host=" + self.DBHOST + " password=pwd")
                 self.PQ_SEM = threading.BoundedSemaphore(1)
         #
         def close_db(self):
